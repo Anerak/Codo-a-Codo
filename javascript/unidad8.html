@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Unidad 8</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="t-container">
+            <div class="t-login">
+                <h1>Ingreso al sistema</h1>
+                <form class="t-form">
+                    <div class="t-inputs">
+                        <div class="t-col">
+                            <label for="username">Usuario:</label>
+                            <label for="passw">Clave:</label>
+                        </div>
+                        <div class="t-col">
+                            <input id="username" type="text" />
+                            <input id="passw" type="password" />
+                            <button class="t-bttn" type="submit">
+                                Ingresar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="t-logged t-hidden">
+                <h1>La sesión se inició satisfactoriamente</h1>
+                <button onclick="logout()" class="t-bttn">Desconectarse</button>
+            </div>
+        </div>
+        <script src="./control.js"></script>
+    </body>
+</html>

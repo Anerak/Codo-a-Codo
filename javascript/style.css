@@ -1,0 +1,28 @@
+:root {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+.t-form,
+.t-container,
+.t-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.t-container {
+    justify-content: space-between;
+}
+
+.t-inputs {
+    display: flex;
+    flex-direction: row;
+}
+
+.t-bttn {
+    margin-top: 20px;
+}
+
+.t-hidden {
+    display: none;
+}

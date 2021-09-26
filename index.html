@@ -28,7 +28,7 @@
                         aria-selected="true"
                         data-activity-to="1"
                     >
-                        Actividad 1
+                        Bootstrap: Actividad 1
                     </button>
                     <button
                         class="nav-link"
@@ -40,7 +40,7 @@
                         aria-selected="false"
                         data-activity-to="2"
                     >
-                        Actividad 2
+                        Bootstrap: Actividad 2
                     </button>
                     <button
                         class="nav-link"
@@ -51,6 +51,18 @@
                         aria-controls="nav-profile"
                         aria-selected="false"
                         data-activity-to="3"
+                    >
+                        Javascript: Actividad 3
+                    </button>
+                    <button
+                        class="nav-link"
+                        id="nav-profile-tab"
+                        data-bs-toggle="tab"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-profile"
+                        aria-selected="false"
+                        data-activity-to="999"
                     >
                         Javascript Code
                     </button>
@@ -232,15 +244,15 @@
             <div class="row d-none" data-activity="2">
                 <form class="row g-3">
                     <div class="col-md-6">
-                        <label for="nomPila" class="form-label"
-                            >Nombre de pila</label
-                        >
+                        <label for="nomPila" class="form-label"></label>
+                            Nombre de pila
+                        </label>
                         <input type="text" id="nomPila" class="form-control" />
                     </div>
                     <div class="col-md-6">
-                        <label for="apellido" class="form-label"
-                            >Apellido</label
-                        >
+                        <label for="apellido" class="form-label">
+                            Apellido
+                        </label>
                         <input type="text" id="apellido" class="form-control" />
                     </div>
                     <label for="username">Nombre de usuario</label>
@@ -248,8 +260,9 @@
                         <span
                             class="input-group-text text-secondary"
                             id="basic-addon1"
-                            >@</span
                         >
+                            @
+                        </span>
                         <input
                             type="text"
                             class="form-control"
@@ -260,10 +273,10 @@
                         />
                     </div>
 
-                    <label for="email"
-                        >Correo eléctronico
-                        <span class="text-secondary">(opcional)</span></label
-                    >
+                    <label for="email">
+                        Correo eléctronico
+                        <span class="text-secondary">(opcional)</span>
+                    </label>
                     <div class="col mb-3">
                         <input
                             type="email"
@@ -276,9 +289,9 @@
                     </div>
 
                     <div class="col-12">
-                        <label for="inputAddress" class="form-label"
-                            >Habla a</label
-                        >
+                        <label for="inputAddress" class="form-label">
+                            Habla a
+                        </label>
                         <input
                             type="text"
                             class="form-control"
@@ -287,12 +300,10 @@
                         />
                     </div>
                     <div class="col-12">
-                        <label for="inputAddress2" class="form-label"
-                            >Dirección 2
-                            <span class="text-secondary"
-                                >(opcional)</span
-                            ></label
-                        >
+                        <label for="inputAddress2" class="form-label">
+                            Dirección 2
+                            <span class="text-secondary">(opcional)</span>
+                        </label>
                         <input
                             type="text"
                             class="form-control"
@@ -308,18 +319,18 @@
                         </select>
                     </div>
                     <div class="col-md-4">
-                        <label for="inputState" class="form-label"
-                            >Estado</label
-                        >
+                        <label for="inputState" class="form-label">
+                            Estado
+                        </label>
                         <select id="inputState" class="form-select">
                             <option selected>Escoger...</option>
                             <option>...</option>
                         </select>
                     </div>
                     <div class="col-md-2">
-                        <label for="inputZip" class="form-label"
-                            >Código Postal</label
-                        >
+                        <label for="inputZip" class="form-label">
+                            Código Postal
+                        </label>
                         <input type="text" class="form-control" id="inputZip" />
                     </div>
                     <div class="col-12">
@@ -349,7 +360,10 @@
                     </div>
                 </form>
             </div>
-            <div class="row d-none" data-activity="3">
+			<div class="row d-none" data-activity="3">
+				<iframe src="./javascript/unidad8.html" frameborder="0" width="500px" height="500px"></iframe>
+			</div>
+            <div class="row d-none" data-activity="999">
                 <pre><code class="">
 function switchTab(id) {
 	let btn = document.querySelector(
